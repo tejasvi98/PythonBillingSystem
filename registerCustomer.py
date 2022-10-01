@@ -5,6 +5,7 @@
 import mysql.connector
 import os
 
+#class with logic of registration form of customer
 class RegisterCustomer:
 
     #initialize constructor and send entries to database
@@ -50,7 +51,7 @@ class RegisterCustomer:
                 new = NewInvoice()
                 new.existingCustomer(customerName,mobileNumber)
             else:
-                print("Thank You for Registering!")
+                print("Registered Successfully\nThank You for Registering. please enjoy shopping with us!")
                 os._exit(0)
             mydb.close()
             
